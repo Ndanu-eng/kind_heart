@@ -14,6 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     
     <style>
         /* Custom fixes for image sizing and layout */
@@ -168,59 +169,85 @@
     <main>
 
         <section class="hero-section hero-section-full-height">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- carousel -->
-                    <div class="col-lg-12 col-12 p-0">
-                        <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="5000">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/slide/khalil-radi-BlzrvWb1_vQ-unsplash.jpg"
-                                        class="carousel-image img-fluid" alt="Volunteer helping African children">
-
-                                    <div class="carousel-caption d-flex flex-column justify-content-end">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-12 p-0">
+                <div id="hero-slide" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#hero-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#hero-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#hero-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="images/slide/khalil-radi-BlzrvWb1_vQ-unsplash.jpg"
+                                    class="carousel-image img-fluid" alt="Volunteer helping African children">
+                            </div>
+                            <div class="carousel-text-container">
+                                <div class="container">
+                                    <div class="carousel-text-content">
                                         <h1>Bringing Hope to African Children</h1>
                                         <p>Supporting education, healthcare and brighter futures across Kenya and Africa</p>
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="images/slide/khalil-radi-e1GHAnjzGgI-unsplash.jpg"
-                                        class="carousel-image img-fluid" alt="Organizing donations for children">
-
-                                    <div class="carousel-caption d-flex flex-column justify-content-end">
-                                        <h1>Transforming Lives</h1>
-                                        <p>Your support helps provide essential resources to children in need</p>
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="images/slide/seth-doyle-zf9_yiAekJs-unsplash.jpg"
-                                        class="carousel-image img-fluid" alt="Community collecting donations">
-
-                                    <div class="carousel-caption d-flex flex-column justify-content-end">
-                                        <h1>Building Brighter Futures</h1>
-                                        <p>Join us in creating lasting change for African children</p>
+                                        <a href="donate.html" class="btn btn-primary btn-lg mt-3">Support Our Cause</a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- carousel button -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
+                        </div>
 
-                            <button class="carousel-control-next" type="button" data-bs-target="#hero-slide"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="images/slide/khalil-radi-e1GHAnjzGgI-unsplash.jpg"
+                                    class="carousel-image img-fluid" alt="Organizing donations for children">
+                            </div>
+                            <div class="carousel-text-container">
+                                <div class="container">
+                                    <div class="carousel-text-content">
+                                        <h1>Transforming Lives</h1>
+                                        <p>Your support helps provide essential resources to children in need</p>
+                                        <a href="donate.html" class="btn btn-primary btn-lg mt-3">Make a Difference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="images/slide/seth-doyle-zf9_yiAekJs-unsplash.jpg"
+                                    class="carousel-image img-fluid" alt="Community collecting donations">
+                            </div>
+                            <div class="carousel-text-container">
+                                <div class="container">
+                                    <div class="carousel-text-content">
+                                        <h1>Building Brighter Futures</h1>
+                                        <p>Join us in creating lasting change for African children</p>
+                                        <a href="#section_4" class="btn btn-primary btn-lg mt-3">Become a Volunteer</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-slide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <section class="section-padding">
             <div class="container">
@@ -947,6 +974,19 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
     </main>
-     
+    
+     <footer class="site-footer-small">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-12 text-center">
+                <p class="copyright-text mb-0">
+                    &copy; 2023 Kind Heart Kenya. All rights reserved. | 
+                    <a href="mailto:info@kindheartkenya.org" class="text-decoration-none">info@kindheartkenya.org</a> | 
+                    +254 720 123 456
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
